@@ -127,7 +127,7 @@ db.createCollection("student", {
                     bsonType: "string",
                     description: "Name of the student - REQUIERED" 
                 },
-                identificacion: { 
+                identification: { 
                     bsonType: "string",
                     description: "Unique identification of the student - REQUIRED" 
                     },
@@ -163,7 +163,7 @@ db.createCollection("student", {
     },
     validationAction: "error"
 });
-db.student.createIndex({ identificacion: 1 }, { unique: true });
+db.student.createIndex({ identification: 1 }, { unique: true });
 print("✅ 'student' collection created with validations.");
 
 db.createCollection("enrollment", {
