@@ -19,8 +19,8 @@ changeStreamEstudiantes.on("change", function(change) {
     };
 
     // Inserta el registro de auditoría
-    db.auditoria.insertOne(auditoria); [3]
-    print("Auditoría registrada: " + change.operationType); [3]
+    db.auditoria.insertOne(auditoria);
+    print("Auditoría registrada: " + change.operationType);
 });
 
 // ============================================
